@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out for collaborations or project discussions.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p><strong>Email:</strong> kundaingwereva3@gmail.com</p>
+            <p><strong>Phone:</strong> +263 788 086 847</p>
+            <p><strong>Location:</strong> Harare, Zimbabwe</p>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
