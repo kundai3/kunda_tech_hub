@@ -1,9 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portfolio website loaded!");
+const text = ["Web Developer", "System Developer", "IT Student"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-    const btn = document.querySelector(".btn");
+(function type() {
+    if (count === text.length) {
+        count = 0;
+    }
 
-    btn.addEventListener("click", function () {
-        alert("Welcome to my portfolio!");
-    });
-});
+    currentText = text[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("typing-text").textContent = letter;
+
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+    }
+
+    setTimeout(type, 200);
+})();
